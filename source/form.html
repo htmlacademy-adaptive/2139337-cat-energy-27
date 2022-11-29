@@ -1,0 +1,136 @@
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo">
+        <img class="main-header__logo-image" src="img/logo-mobile.svg" width="33" height="37" alt="Магазин функционального питания для котов">
+        <img class="main-header__logo-image" src="img/footer-logo.svg" width="101" height="18" alt="Магазин функционального питания для котов">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__item" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__item" href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--current">
+              <a class="site-list__item" href="#">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+      <main class="form-container">
+        <section class="form-container__questionary">
+          <h1 class="form-container__header">
+            Подбор программы
+          </h1>
+          <form class="questionary-form" action="index.html" method="post">
+            <div class="questionary">
+              <p class="questionary-form__title">заполните анкету, и мы подберём программу питания для вашего кота</p>
+              <label class="questionary-form__field">
+                <span class="questionary-form__field-label">Имя*</span>
+                <input class="questionary-form__field-control input" type="text" name="questionary-form-animal-name" placeholder="Имя кота">
+              </label>
+              <label class="questionary-form__field">
+                <span class="questionary-form__field-label">Вес(КГ)*</span>
+                <input class="questionary-form__field-control input" type="number" name="questionary-form-animal-name" placeholder="вес">
+              </label>
+              <label class="questionary-form__field">
+                <span class="questionary-form__field-label">Возраст (ЛЕТ)</span>
+                <input class="questionary-form__field-control input" type="number" name="questionary-form-animal-name" placeholder="Возраст">
+              </label>
+            </div>
+          <div class="course-form" action="form.html" method="post">
+            <input id="fit" type="radio" name="question" value="fit-weight" checked>
+            <label for="fit">Похудение</label>
+            <input id="gain" type="radio" name="question" value="gain-weight">
+            <label for="gain">Набор массы</label>
+            <input id="help" type="radio" name="question" value="unknow">
+            <label for="help">Не знаю (Нужен Ваш совет)</label>
+          </div>
+          <div class="contact-form" action="#" method="POST">
+            <p class="contact-form__title">Контактные данные (владельца кота)</p>
+            <label class="contact-form__field">
+              <span class="contact-form__field-label">E-mail:*</span>
+              <input class="contact-form__field-control input" type="email" name="contact-form-recipient-email" placeholder="kuklachev@gmail.com">
+            </label>
+            <label class="contact-form__field">
+              <span class="contact-form__field-label">Телефон:*</span>
+              <input class="contact-form__field-control input" type="phone" name="contact-form-recipient-phone" placeholder="8(960)9006090">
+            </label>
+          </div>
+            <div class="behavior">
+              <p class="behavior__comment">Комментарий</p>
+              <textarea name="behavior__area" rows="8" cols="80">Расскажите обо всех повадках кота</textarea>
+            </div>
+            <div class="additionally-form" action="form.html" method="post">
+              <input id="fit" type="checkbox" name="question" value="sugar-free" checked>
+              <label for="fit">Сахарозаменитель</label>
+              <input id="gain" type="checkbox" name="question" value="water">
+              <label for="gain">Питьевая вода</label>
+              <input id="help" type="checkbox" name="question" value="milk">
+              <label for="help">Молоко</label>
+              <input id="help" type="checkbox" name="question" value="vitamines">
+              <label for="help">Витамины</label>
+            </div>
+            <button class="form-container__button" type="button" name="button">ОТПРАВИТЬ ЗАЯВКУ</button>
+            <p class="form-container__legend">
+              <small>* - Обязательные поля</small>
+            </p>
+          </form>
+        </section>
+      </main>
+      <footer class="main-footer">
+        <section class="maps">
+          <h3 class="maps__header">
+            приглашаем  к сотрудничеству дилеров!
+          </h3>
+          <address class="maps__address">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </address>
+          <img class="maps__pin" src="img/map-pin.svg" width="56" height="52" alt="">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036282822847!2d30.31882022985122!3d59.93871911957627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2skz!4v1669614592838!5m2!1sru!2skz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="footer-bio">
+          <img class="footer-bio__image" src="img/footer-logo.svg" width="128" height="24" alt="Магазин функционального питания для котов">
+          <ul class="footer-bio__list">
+            <li class="footer-bio__item">
+              <a class="footer-bio__link" href="#">
+                <img class="footer-bio__source" src="img/vkontakte.svg" width="28" height="22" alt="Вконтакте">
+              </a>
+            </li>
+            <li class="footer-bio__item">
+              <a class="footer-bio__link" href="#">
+                <img class="footer-bio__source" src="img/youtube.svg" width="28" height="22" alt="Ютьюб">
+              </a>
+            </li>
+            <li class="footer-bio__item">
+              <a class="footer-bio__link" href="#">
+                <img class="footer-bio__source" src="img/telegram.svg" width="28" height="22" alt="Телеграм">
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-link">
+          <a class="footer-link__academy"> HTML Academy
+            <img class="footer-link__logo" src="img/html-academy-footer.svg" width="27" height="34" alt="HTML Academy">
+          </a>
+        </section>
+      </footer>
+  </body>
+</html>
