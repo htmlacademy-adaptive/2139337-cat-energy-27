@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
@@ -48,8 +49,8 @@
             </div>
             <div class="catalog-links__item">
               <h3 class="catalog-links__header">Набор массы</h3>
-              <img class="catalog-links__image" src="img/cat_gain.svg" width="50" height="53" alt="Стройный котик">
-              <p class="catalog-links__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <img class="catalog-links__image" src="img/cat_gain.svg" width="67" height="50" alt="Полный котик">
+              <p class="catalog-links__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
               <a class="catalog-links__button button" href="#">КАТАЛОГ PRO</a>
             </div>
           </div>
@@ -89,20 +90,20 @@
           <div class="example__wrap">
             <h2 class="example__header">Живой пример</h2>
             <p class="example__header-description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-            <dl class="example__list">
+            <!-- переделать таблицу на дивы -->
+            <div class="example__list">
               <div class="example__item">
-                <dt class="example__number">5кг</dt>
-                <dd class="example__description">снижение веса</dd>
+                <p class="example__number">5кг</p>
+                <span class="example__description">снижение веса</span>
               </div>
               <div class="example__item">
-                <dt class="example__number">60 дней</dt>
-                <dd class="example__description">затрачено времени</dd>
+                <p class="example__number">60 дней</p>
+                <span class="example__description">затрачено времени</span>
               </div>
               <div class="example__item">
-                <dt class="example__number">Затраты на питание:</dt>
-                <dd class="example__description">15 000 руб.</dd>
+                <p class="example__number">Затраты на питание: 15 000 руб.</p>
               </div>
-            </dl>
+            </div>
             <div class="example__slider-wrapper">
               <div class="slider-example">
                 <div class="slide">
@@ -119,11 +120,14 @@
         </section>
       </main>
       <footer class="main-footer">
-        <section class="maps">
-          <h3 class="maps__header">приглашаем к сотрудничеству дилеров!</h3>
-          <address class="maps__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036282822847!2d30.31882022985122!3d59.93871911957627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2skz!4v1669614592838!5m2!1sru!2skz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
+        <!-- разбить на два контейнера -->
+        <div class="offer">
+          <h3 class="offer__header">приглашаем к сотрудничеству дилеров!</h3>
+          <address class="offer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        </div>
+          <div class="map">
+          <iframe  class="map__frame"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036282822847!2d30.31882022985122!3d59.93871911957627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2skz!4v1669614592838!5m2!1sru!2skz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
         <section class="footer-bio">
           <h2 class="visually-hidden">Мы в соц. сетях</h2>
           <img class="footer-bio__image" src="img/footer-logo.svg" width="128" height="24" alt="Магазин функционального питания для котов">
